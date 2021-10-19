@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="/trackerstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tracker__top__container">
+      <div class="tracker__toptext">IP Address Tracker</div>
+      <div class="tracker__searchbar">
+        <form id="searchloc">
+          <input
+            type="text"
+            id="address"
+            placeholder="Search for any IP address or domain"
+            required="required"
+          />
+          <button class="tracker__searchbar__btn" type="submit">></button>
+        </form>
+      </div>
+      <div class="tracker__details__container">
+        <div class="tracker__details__top">
+          IP Address
+          <div class="tracker__details__ip"></div>
+        </div>
+        <div class="tracker__details__top">
+          Location
+          <div class="tracker__details__loc"></div>
+        </div>
+        <div class="tracker__details__top">
+          Timezone
+          <div class="tracker__details__time"></div>
+        </div>
+        <div class="tracker__details__top">
+          ISP
+          <div class="tracker__details__isp"></div>
+        </div>
+      </div>
+    </div>
+    <div id="mapid"></div>
+    <script src="iptracker.js"></script>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/eszymanski98">Ernest Szymański</a>.
+    </div>
+  </body>
+</html>

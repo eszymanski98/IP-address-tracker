@@ -1,0 +1,134 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url("images/pattern-bg.png");
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  background-size: 100% 30%;
+  margin: auto;
+}
+
+.tracker__top__container {
+  position: relative;
+}
+
+.tracker__toptext {
+  font-family: Rubik, sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  padding-top: 2%;
+}
+
+.tracker__searchbar {
+  padding-top: 1%;
+  padding-bottom: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mapid {
+  height: 90%;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+}
+
+.tracker__details__container {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  z-index: 2;
+  background-color: white;
+  font-family: Rubik, sans-serif;
+  width: 50%;
+  min-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 80%;
+  border-style: none;
+  border-radius: 15px;
+  padding: 1% 0% 1% 1%;
+  -webkit-box-shadow: 0px 16px 40px -25px black;
+          box-shadow: 0px 16px 40px -25px black;
+}
+
+.tracker__details__top {
+  text-align: left;
+  width: 80%;
+  color: #969696;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-right: solid 1px lightgrey;
+  padding: 1% 2% 2% 2%;
+}
+
+.tracker__details__top:last-child {
+  border-right: none;
+}
+
+.tracker__details__ip, .tracker__details__loc,
+.tracker__details__time, .tracker__details__isp {
+  color: black;
+  padding-top: 2%;
+  font-weight: 700;
+}
+
+.tracker__searchbar {
+  width: 100%;
+  margin: auto;
+}
+
+#address {
+  border-style: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px 0px 10px 10px;
+  width: 400px;
+  margin-right: 0px;
+}
+
+.tracker__searchbar__btn {
+  border-style: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: black;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  margin-left: 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tracker__searchbar__btn:hover {
+  background-color: #494949;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.tracker__searchbar__btn:active {
+  background-color: #3434df;
+}
+/*# sourceMappingURL=trackerstyle.css.map */
